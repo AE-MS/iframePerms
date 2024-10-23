@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TypeScript Webpage</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1 id="intro"></h1>
     <div id="subText"></div>
-    <button id="createIframeButton">Create/Recreate IFRAME</button>
+    <button id="getLocationButton">Get Location</button>
+    <p></p>
+    <div id="sandboxDiv" style="display: none">
+      <label for="sandboxAttribute">Sandbox attribute:</label>
+      <input
+        type="text"
+        id="sandboxAttribute"
+        name="sandboxAttribute"
+        value="allow-scripts allow-popups"
+        style="width: 250px"
+      />
+    </div>
+    <div id="allowDiv" style="display: none">
+      <label for="allowAttribute">Allow attributes:</label>
+      <input type="text" id="allowAttribute" name="allowAttribute" value="geolocation" style="width: 250px" />
+    </div>
+    <div id="iframeUrlDiv" style="display: none">
+      <label for="iframeUrl">IFRAME URL:</label>
+      <input type="text" id="iframeUrl" name="iframeUrl" value="http://127.0.0.1:8080/" style="width: 500px" />
+    </div>
+    <button id="createIframeButton" style="display: none">Create/Recreate IFRAME</button>
     <script src="dist/index.js"></script>
     <p></p>
     <div id="iframeContainer"></div>
-</body>
+  </body>
 </html>
